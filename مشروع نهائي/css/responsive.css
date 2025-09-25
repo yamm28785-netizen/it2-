@@ -1,0 +1,52 @@
+@media (max-width: 768px) {
+    .header .navbar-nav {
+        text-align: center;
+    }
+    
+    .header .btn-login,
+    .header .btn-register {
+        margin: 5px;
+        display: inline-block;
+    }
+    
+    .wow-slider,
+    .slide {
+        height: 300px;
+    }
+    
+    .slide-caption {
+        right: 5%;
+        left: 5%;
+        text-align: center;
+    }
+    
+    .slide-caption h2 {
+        font-size: 1.5rem;
+    }
+    
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .stat-item {
+        margin-bottom: 30px;
+    }
+    
+    .stat-item h3 {
+        font-size: 2rem;
+    }
+    
+    .yemen-info .col-md-6 {
+        margin-bottom: 30px;
+    }
+    
+    .footer .col-md-4,
+    .footer .col-md-3,
+    .footer .col-md-2 {
+        margin-bottom: 30px;
+    }
+    
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+}

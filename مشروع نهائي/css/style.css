@@ -1,0 +1,268 @@
+/* تنسيقات عامة */
+body {
+    font-family: 'Cairo', sans-serif;
+    direction: rtl;
+    text-align: right;
+    color: #433636;
+}
+
+/* تنسيق الهيدر */
+.header .navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.header .btn-login,
+.header .btn-register {
+    border: 1px solid #f63535;
+    border-radius: 4px;
+    margin: 0 5px;
+    padding: 5px 15px !important;
+}
+
+.header .btn-login {
+    background: transparent;
+    color: #0d6efd;
+}
+
+.header .btn-register {
+    background: #0d6efd;
+    color: white;
+}
+
+/* شريط الصور المتحرك */
+.wow-slider {
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+}
+
+.slide {
+    position: relative;
+    height: 500px;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slide-caption {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+    max-width: 500px;
+}
+
+.cta-button {
+    background: linear-gradient(45deg, #ff6b6b, #ffd700);
+    color: white;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 15px rgba(255, 107, 107, 0.4);
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(255, 107, 107, 0.6);
+}
+
+/* قسم الميزات */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.feature-card {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 2rem;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+    transition: transform 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+}
+
+.feature-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #ec2355;
+}
+
+/* قسم معلومات اليمن */
+.yemen-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.yemen-info li {
+    margin-bottom: 10px;
+    padding-right: 20px;
+    position: relative;
+}
+
+.yemen-info li:before {
+    content: "•";
+    color: #667eea;
+    font-weight: bold;
+    position: absolute;
+    right: 0;
+}
+
+/* قسم الإحصائيات */
+.statistics {
+    background: linear-gradient(135deg, #0d6efd 0%, #0a58ca 100%);
+    color: white;
+}
+
+.stat-item i {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.stat-item h3 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* وسائل التواصل الاجتماعية */
+.social-links a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    margin-left: 10px;
+    transition: all 0.3s;
+    color: white;
+}
+
+.social-links a:hover {
+    background: #0d6efd;
+    transform: translateY(-5px);
+}
+
+/* تذييل الصفحة */
+.footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #f4f3ef;
+}
+
+.footer i {
+    margin-left: 10px;
+}
+.footer {
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%) !important;
+}
+
+.footer h5 {
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #796f3f; /* لون ذهبي للعناوين */
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #fdfbf0; /* لون ذهبي عند المرور */
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+}
+
+.footer i {
+    margin-left: 10px;
+    color: #f1f0ec; /* لون ذهبي للأيقونات */
+    width: 20px;
+}
+
+.social-links a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    margin-left: 10px;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    background: #0d6efd; /* خلفية زرقاء عند المرور */
+    transform: translateY(-5px); /* تأثير الرفع */
+}
+
+/* معرض الصور */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    height: 250px;
+    
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+.gallery-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.7);
+    color: rgb(170, 146, 146);
+    padding: 15px;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover .gallery-caption {
+    transform: translateY(0);
+}
+
+/* نماذج التسجيل */
+.form-control:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
