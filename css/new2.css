@@ -1,0 +1,121 @@
+/* وسائط الاستعلام للشاشات المتوسطة (أجهزة لوحية) */
+@media (max-width: 992px) {
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 20px;
+    }
+    
+    .gallery-item {
+        height: 250px;
+    }
+    
+    .footer .col-md-4,
+    .footer .col-md-3,
+    .footer .col-md-2 {
+        margin-bottom: 30px;
+    }
+}
+
+/* وسائط الاستعلام للشاشات الصغيرة (هواتف) */
+@media (max-width: 768px) {
+    body {
+        padding-top: 66px;
+    }
+    
+    .page-header {
+        margin-top: 66px;
+        padding: 40px 0;
+    }
+    
+    .page-header h1 {
+        font-size: 1.8rem;
+    }
+    
+    .page-header .lead {
+        font-size: 1rem;
+    }
+    
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .gallery-item {
+        height: 220px;
+        border-radius: 8px;
+    }
+    
+    .gallery-caption {
+        padding: 15px;
+    }
+    
+    .gallery-caption h5 {
+        font-size: 1.1rem;
+    }
+    
+    .social-links {
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+    .social-links a {
+        margin: 0 5px;
+    }
+    
+    /* تعديلات شريط التنقل */
+    .navbar-nav {
+        text-align: center;
+        padding: 10px 0;
+    }
+    
+    .navbar-nav .nav-item {
+        margin: 5px 0;
+    }
+}
+
+/* وسائط الاستعلام للشاشات الصغيرة جدًا */
+@media (max-width: 576px) {
+    .gallery-item {
+        height: 200px;
+    }
+    
+    .footer {
+        text-align: center;
+    }
+    
+    .footer ul {
+        padding-right: 0;
+    }
+    
+    .footer i {
+        margin-left: 0;
+        margin-right: 10px;
+    }
+}
+
+/* تحسينات للأجهزة التي تدعم اللمس */
+@media (hover: none) {
+    .gallery-caption {
+        transform: translateY(0);
+        background: rgba(0,0,0,0.7);
+    }
+    
+    .gallery-item:hover {
+        transform: none;
+    }
+    
+    .gallery-item:hover img {
+        transform: none;
+    }
+}
+
+/* تحسينات للوضع الداكن */
+@media (prefers-color-scheme: dark) {
+    .gallery-content {
+        background-color: #1a1a1a;
+    }
+    
+    .gallery-item {
+        box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    }
+}

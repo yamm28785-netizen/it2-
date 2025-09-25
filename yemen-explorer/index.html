@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مستكشف اليمن | Yemen Explorer</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- WowSlider CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <i class="fas fa-globe-asia"></i>
+                    مستكشف اليمن
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">الرئيسية</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="heritage.html">التراث</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="gallery.html">معرض الصور</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="souvenirs.html">أشياء تذكارية</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">تواصل معنا</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-login" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">تسجيل الدخول</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="register.html" data-bs-toggle="modal" data-bs-target="#registerModal">إنشاء حساب</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section with WowSlider -->
+    <section class="hero-slider">
+        <div id="wow-slider" class="wow-slider">
+            <div class="slider-inner">
+                <div class="slide">
+                    <iframe src="../Textab/wowslider-iframe.html" style="width:1280px;height:720px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+<!-- End WOWSlider.com -->
+                    <div class="slide-caption">
+                        <h2>اكتشف جمال اليمن الساحر</h2>
+                        <p>رحلة استثنائية عبر تاريخ عريق وطبيعة ساحرة وتراث ثقافي غني</p>
+                        
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="../images/images.jpeg" alt="سقطرى">
+                    <div class="slide-caption">
+                        <h2>أرخبيل سقطرى</h2>
+                        <p>جزيرة التنوع البيولوجي الفريد</p>
+                        <button class="cta-button">استكشف الجزيرة <i class="fas fa-arrow-left"></i></button>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="../images/images (4).jpeg" alt="شبوة">
+                    <div class="slide-caption">
+                        <h2>مملكة حضرموت</h2>
+                        <p>اكتشف عراقة التاريخ في شبوة</p>
+                        <button class="cta-button">اكتشف التاريخ <i class="fas fa-arrow-left"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- Yemen Info Section -->
+    <section class="yemen-info py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2>اليمن: جوهرة الجزيرة العربية</h2>
+                    <p>تمتلك اليمن تراثاً ثقافياً غنياً وتاريخاً عريقاً يعود إلى آلاف السنين. من مدنها التاريخية إلى طبيعتها الخلابة، تقدم اليمن تجربة سياحية فريدة لا تُنسى.</p>
+                    <ul>
+                        <li>مدينة صنعاء القديمة: موقع تراث عالمي لليونسكو</li>
+                        <li>أرخبيل سقطرى: واحدة من أجمل الجزر في العالم</li>
+                        <li>شبوة: موطن مملكة حضرموت القديمة</li>
+                        <li>تعز: العاصمة الثقافية لليمن</li>
+                    </ul>
+                    <button  id="heritageModalBtn" class="btn-success">استكشف التراث اليمني</button>
+                </div>
+                <div class="col-md-6">
+                    <img src="../images/images (2).jpeg" alt="خريطة اليمن" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="statistics py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">اليمن في أرقام</h2>
+            <div class="row text-center">
+                <div class="col-md-3 col-6">
+                    <div class="stat-item">
+                        <i class="fas fa-university"></i>
+                        <h3 class="counter" data-target="4">5</h3>
+                        <p>مواقع تراث عالمي</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="stat-item">
+                        <i class="fas fa-mountain"></i>
+                        <h3 class="counter" data-target="200">10</h3>
+                        <p>قلعة تاريخية</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="stat-item">
+                        <i class="fas fa-utensils"></i>
+                        <h3 class="counter" data-target="50">200</h3>
+                        <p>طبق تقليدي</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="stat-item">
+                        <i class="fas fa-language"></i>
+                        <h3 class="counter" data-target="6">200
+
+                        </h3>
+                        <p>لهجات محلية</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>مستكشف اليمن</h5>
+                    <p>منصة سياحية متكاملة لاكتشاف كنوز اليمن الثقافية والطبيعية.</p>
+                </div>
+                <div class="col-md-2">
+                    <h5>روابط سريعة</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="heritage.html">التراث</a></li>
+                        <li><a href="gallery.html">معرض الصور</a></li>
+                        <li><a href="souvenirs.html">أشياء تذكارية</a></li>
+                        <li><a href="contact.html">تواصل معنا</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>وسائل التواصل</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-phone"></i>+967 773983931</li>
+                        <li><i class="fas fa-envelope"></i> ibrahim adel-explorer.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> صنعاء، اليمن</li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>تابعنا على</h5>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    <div class="mt-3">
+                        <button class="btn btn-outline-light btn-sm" id="newsletter-btn">اشترك في النشرة البريدية</button>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p>&copy; 2025 مستكشف اليمن. جميع الحقوق محفوظة.</p>
+                <p>ابراهيم عادل الحيث</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">تسجيل الدخول</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="loginForm">
+                        <div class="mb-3">
+                            <label for="loginEmail" class="form-label">البريد الإلكتروني</label>
+                            <input type="email" class="form-control" id="loginEmail" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="loginPassword" class="form-label">كلمة المرور</label>
+                            <input type="password" class="form-control" id="loginPassword" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">تسجيل الدخول</button>
+                    </form>
+                    <div class="text-center mt-3">
+                        <p>ليس لديك حساب؟ <a href="#" data-bs-toggle="modal" data-bs-target="#registerModal" data-bs-dismiss="modal">إنشاء حساب</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div class="modal fade" id="registerModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">إنشاء حساب جديد</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="registerForm">
+                        <div class="mb-3">
+                            <label for="registerName" class="form-label">الاسم الكامل</label>
+                            <input type="text" class="form-control" id="registerName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="registerEmail" class="form-label">البريد الإلكتروني</label>
+                            <input type="email" class="form-control" id="registerEmail" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="registerPassword" class="form-label">كلمة المرور</label>
+                            <input type="password" class="form-control" id="registerPassword" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="registerConfirmPassword" class="form-label">تأكيد كلمة المرور</label>
+                            <input type="password" class="form-control" id="registerConfirmPassword" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">إنشاء حساب</button>
+                    </form>
+                    <div class="text-center mt-3">
+                        <p>لديك حساب بالفعل؟ <a href="#" data-bs-toggle="modal" data-bs-target="#loginModal" data-bs-dismiss="modal">تسجيل الدخول</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Heritage Modal (Loaded via AJAX) -->
+    <div class="modal fade" id="heritageModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">التراث اليمني</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="heritage-detail">
+                    <!-- سيتم تحميل المحتوى عبر AJAX -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Newsletter Modal -->
+    <div class="modal fade" id="newsletterModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">اشترك في النشرة البريدية</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="newsletterForm">
+                        <div class="mb-3">
+                            <label for="newsletterName" class="form-label">الاسم</label>
+                            <input type="text" class="form-control" id="newsletterName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="newsletterEmail" class="form-label">البريد الإلكتروني</label>
+                            <input type="email" class="form-control" id="newsletterEmail" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">اشتراك</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Notification Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mouse0270-bootstrap-notify/3.1.7/bootstrap-notify.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="../js/validation.js"></script>
+    <script src="../js/notification.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>
